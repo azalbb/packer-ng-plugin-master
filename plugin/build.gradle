@@ -1,0 +1,28 @@
+apply plugin: 'groovy'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+repositories {
+        mavenCentral()
+        jcenter()
+        google()
+}
+
+dependencies {
+    implementation localGroovy()
+    implementation gradleApi()
+    implementation project(':common')
+    implementation project(':cli')
+    implementation 'com.android.tools.build:gradle:7.0.4'
+    implementation 'com.android.tools.build:apksig:7.0.4'
+}
+
+apply from: '../gradle-mvn-push.gradle'
+

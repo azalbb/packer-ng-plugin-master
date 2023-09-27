@@ -1,0 +1,21 @@
+ext {
+    compileSdkVersion = 30
+    buildToolsVersion = "30.0.2"
+    minSdkVersion = 14
+    targetSdkVersion = 26
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        google()
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'
+    }
+}
+
+group = GROUP
+version = VERSION_NAME

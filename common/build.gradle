@@ -1,0 +1,27 @@
+
+repositories {
+        mavenCentral()
+        jcenter()
+        google()
+}
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+
+}
+
+test {
+    testLogging.showStandardStreams = true
+}
+
+javadoc {
+    failOnError false
+}
+
+
+
+apply from: '../gradle-mvn-push.gradle'
